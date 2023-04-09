@@ -12,6 +12,13 @@
         <td>{{employee.firstName}}</td>
         <td>{{employee.lastName}}</td>
         <td>{{employee.emailId}}</td>
+        <td>
+            <button (click)="updateEmployee(employee.id)" class="btn btn-info text-white"> update</button>
+            
+            <button (click)="deleteEmployee(employee.id)" class="btn btn-danger text-white" style="margin-left: 10px;"> delete</button>
+
+            <button (click)="employeeDetails(employee.id)" class="btn btn-success text-white" style="margin-left: 10px;"> View</button>
+        </td>
     </tr>
 
   </tbody>
